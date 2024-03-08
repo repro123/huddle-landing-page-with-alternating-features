@@ -1,0 +1,244 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --VeryPaleCyan: hsl(193, 100%, 96%);
+  --VeryDark-Cyan: hsl(192, 100%, 9%);
+  --GrayishBlue: hsl(208, 11%, 55%);
+}
+body {
+  font-family: "Open Sans", verdana;
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+  text-align: center;
+  font-size: 1rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+header,
+main,
+footer {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.c-card-component {
+  width: 100%;
+  max-width: 375px;
+  padding: 1rem;
+}
+/* header */
+header {
+  background-image: url(./images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100% auto;
+  background-color: var(--VeryPaleCyan);
+}
+header .c-card-component {
+  display: grid;
+  gap: 3rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 9.375rem;
+}
+.nav__huddle-home-link {
+  width: fit-content;
+}
+.nav__link {
+  background-color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+}
+.nav__link:hover {
+  color: var(--GrayishBlue);
+}
+.header__hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+hgroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+h1 {
+  font-size: 2rem;
+}
+.hero__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--Pink);
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.hero__link:hover {
+  opacity: 0.7;
+}
+
+/* styling for <main> */
+
+main .c-card-component {
+  /* background-color: red; */
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+  position: relative;
+}
+.main__grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  box-shadow: 1px 1px 10px var(--GrayishBlue);
+  border-radius: 12px;
+  padding: 2rem;
+  background-color: #fff;
+}
+.main__grid-item p {
+  color: var(--GrayishBlue);
+  font-weight: 400;
+}
+.main__grid-item div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.grid-4 {
+  position: absolute;
+  bottom: -20%;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+/* footer styling */
+
+footer {
+  background-color: var(--VeryDark-Cyan);
+  color: #fff;
+  margin-top: 180px;
+  padding-top: 10rem;
+}
