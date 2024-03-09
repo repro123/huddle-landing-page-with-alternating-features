@@ -357,7 +357,7 @@ address p a {
 }
 @media (min-width: 64rem) {
   .c-card-component {
-    max-width: 65rem;
+    max-width: 75rem;
   }
   .header__hero-section {
     display: grid;
