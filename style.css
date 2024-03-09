@@ -241,4 +241,87 @@ footer {
   color: #fff;
   margin-top: 180px;
   padding-top: 10rem;
+  text-align: left;
+}
+footer .c-card-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+footer svg path {
+  fill: currentColor;
+}
+.address-links-social {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+address {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-style: normal;
+  font-size: 1rem;
+}
+address p {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+address p a {
+  text-decoration: none;
+}
+.lorem {
+  align-items: flex-start;
+}
+.lorem img {
+  width: 3rem;
+}
+.links ul {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+.links ul a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.links ul a:hover {
+  text-decoration: underline;
+  margin-left: 1rem;
+}
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.social a {
+  color: #fff;
+  border: 1px solid currentColor;
+  padding: 0.6rem;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+}
+.social a:hover {
+  color: var(--Pink);
+}
+.social svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.social svg path {
+  fill: currentColor;
+}
+.attribution {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.6875rem;
+  width: 100%;
 }
