@@ -179,6 +179,7 @@ hgroup {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  font-weight: 500;
 }
 h1 {
   font-size: 2rem;
@@ -229,7 +230,7 @@ main .c-card-component {
 }
 .grid-4 {
   position: absolute;
-  bottom: -20%;
+  bottom: -20rem;
   padding: 2rem 1rem;
   gap: 2rem;
 }
@@ -312,7 +313,6 @@ address p a {
   width: 1rem;
   height: 1rem;
 }
-
 .social svg path {
   fill: currentColor;
 }
@@ -324,4 +324,66 @@ address p a {
   gap: 1rem;
   font-size: 0.6875rem;
   width: 100%;
+}
+@media (min-width: 48rem) {
+  .c-card-component {
+    max-width: 43.75rem;
+  }
+  .main__grid-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main__grid-item div {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .grid-1,
+  .grid-3 {
+    grid-template-areas: "text image";
+  }
+  .grid-1 img {
+    grid-area: image;
+  }
+  .grid-3 img {
+    grid-area: image;
+  }
+  .grid-4 {
+    display: flex;
+    width: 60%;
+  }
+  .lorem img {
+    width: 22px;
+  }
+}
+@media (min-width: 64rem) {
+  .c-card-component {
+    max-width: 65rem;
+  }
+  .header__hero-section {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+  hgroup {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .lorem img {
+    width: 4rem;
+  }
+  .address-links-social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+  .links ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .social {
+    align-items: flex-start;
+  }
+  .attribution {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
